@@ -16,7 +16,7 @@ if (isset($_POST['subir_usuario'])) {
         $tamano = $_FILES['archivo']['size'];
         $temp = $_FILES['archivo']['tmp_name'];
         // Comprobamos si el archivo subido es correcto, según su extensión y tamaño.
-        if (!((strpos($tipo, "png") || strpos($tipo, "jpg") || strpos($tipo, "pdf")) && ($tamano <= 50000000))) {
+        if (!((strpos($tipo, "png") || strpos($tipo, "jpg") || strpos($tipo, "pdf")) && ($tamano <= 5000000))) {
             // Si el archivo no es correcto, el usuario observará un mensaje en pantalla.
             echo "<script language='JavaScript'>
                     alert('La extensión o tamaño de la imagen no es correcta.');
@@ -52,7 +52,7 @@ if (isset($_POST['subir_empresa'])) {
         $tamano = $_FILES['archivo']['size'];
         $temp = $_FILES['archivo']['tmp_name'];
         // Comprobamos si el archivo subido es correcto, según su extensión y tamaño.
-        if (!((strpos($tipo, "png") || strpos($tipo, "jpg") || strpos($tipo, "pdf")) && ($tamano <= 50000000))) {
+        if (!((strpos($tipo, "png") || strpos($tipo, "jpg") || strpos($tipo, "pdf")) && ($tamano <= 5000000))) {
             // Si el archivo no es correcto, el usuario observará un mensaje en pantalla.
             echo "<script language='JavaScript'>
                     alert('La extensión o tamaño del logo no es correcto.');
